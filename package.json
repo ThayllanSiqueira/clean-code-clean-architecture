@@ -1,0 +1,15 @@
+{
+  "name": "clean-code-clean-architecture",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "docker:start": "docker compose up -d",
+    "docker:stop": "docker compose stop",
+    "docker:clean": "docker compose rm -fsv",
+    "db:update": "psql -h localhost -U postgres -p 5432 -U postgres -d app -f create.sql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
